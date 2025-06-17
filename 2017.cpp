@@ -9,7 +9,8 @@ public:
         for(int i=0;i<n;i++){
             s1-=grid[0][i];
             ans=min(ans,max(s1,s2));
-            s2+=grid[1][j];
+            s2+=grid[1][i];
         }
+        return ans;
     }
 };
